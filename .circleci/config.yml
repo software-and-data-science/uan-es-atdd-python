@@ -1,7 +1,7 @@
 # Python CircleCI 2.0 configuration file with sonar cloud support
 version: 2.1
 orbs:
-  sonarcloud-python: ksmc/sonarcloud-python@0.0.1
+  sonarcloud-python: sonarsource/sonarcloud@1.0.0
 jobs:
   build:
     docker:
@@ -30,3 +30,10 @@ jobs:
           command: |
             . venv/bin/activate
             behave
+      # Step 5: Sonar cloud report
+      - sonarcloud/scan
+workflows:
+  my-workflow:
+    jobs:
+      - build:
+          context: sonarcloud
