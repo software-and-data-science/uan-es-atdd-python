@@ -1,12 +1,16 @@
 from calculator import *
 
 
-class TestCalculadora:
+class TestCalculator:
 
-    def test_suma(self):
+    def test_add(self):
         calculator = Calculator()
         assert 4 == calculator.add(2, 2)
 
-    def test_resta(self):
+    def test_subtract(self):
         calculator = Calculator()
         assert 2 == calculator.subtract(4, 2)
+
+    def test_multiply(self):
+        calculator = Calculator()
+        assert 15 == calculator.multiply(3, 5)
