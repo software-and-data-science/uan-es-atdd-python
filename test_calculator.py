@@ -9,4 +9,4 @@ class TestCalculadora:
 
     def test_resta(self):
         calculator = Calculator()
-        assert 4 == calculator.subtract(4, 2)
+        assert 2 == calculator.subtract(4, 2)
