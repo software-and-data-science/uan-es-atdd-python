@@ -1,4 +1,4 @@
-# Python CircleCI 2.0 configuration file
+# Python CircleCI 2.0 configuration file with sonar cloud support
 version: 2.1
 orbs:
   sonarcloud-python: ksmc/sonarcloud-python@0.0.1
