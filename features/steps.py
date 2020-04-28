@@ -8,7 +8,7 @@ def step_impl(context, values):
 
 @when('the calculator sums the values')
 def step_impl(context):
-    context.total = context.calculator.sumar(int(context.values[0]),int(context.values[1]))
+    context.total = context.calculator.add(int(context.values[0]),int(context.values[1]))
 
 @then('the {total:d} of sum is correct')
 def step_impl(context, total):
@@ -21,7 +21,7 @@ def step_impl(context, values):
 
 @when('the calculator substract the values')
 def step_impl(context):
-    context.total = context.calculator.restar(int(context.values[0]),int(context.values[1]))
+    context.total = context.calculator.subtract(int(context.values[0]),int(context.values[1]))
 
 @then('the {total:d} of substraction is correct')
 def step_impl(context, total):
