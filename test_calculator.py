@@ -11,3 +11,6 @@ class TestCalculator:
         calculator = Calculator()
         assert 2 == calculator.subtract(4, 2)
 
+    def test_multiply(self):
+        calculator = Calculator()
+        assert 6 == calculator.multiply(2, 3)
