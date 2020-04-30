@@ -30,12 +30,12 @@ def step_impl(context, total):
 
 @given('a {values} to multiply')
 def step_impl(context, values):
-    context.calculadora = Calculator()
+    context.calculator = Calculator()
     context.values = values.split(',')
 
 @when('the calculator multiply the values')
 def step_impl(context):
-    context.total = context.calculator.multiplicar(int(context.values[0]),int(context.values[1]))
+    context.total = context.calculator.multiply(int(context.values[0]),int(context.values[1]))
 
 @then('the {total:d} of multiply is correct')
 def step_impl(context, total):
