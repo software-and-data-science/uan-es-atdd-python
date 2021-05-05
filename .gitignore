@@ -133,3 +133,5 @@ dmypy.json
 .idea/inspectionProfiles/Project_Default.xml
 .idea/inspectionProfiles/profiles_settings.xml
 .idea/uan-es-atdd-python.iml
+.idea/uan-es-atdd-python-2019.iml
+.idea/sonarIssues.xml
