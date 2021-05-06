@@ -14,3 +14,4 @@ class TestCalculator:
     def test_multiply(self):
         calculator = Calculator()
         assert calculator.multiply(2, 3) == 6
+
