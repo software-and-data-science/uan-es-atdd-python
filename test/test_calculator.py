@@ -1,4 +1,4 @@
-from calculator import *
+from app.calculator import *
 
 
 class TestCalculator:
